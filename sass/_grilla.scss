@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    //font-family: 'Barlow', sans-serif;    600
+    //font-family: 'Fraunces', serif;       700  900
+}
+
+.GRID_BASE{
+    width: 1440px;
+    max-width: 100%;
+    background: rgb(255, 255, 255);
+    margin: auto;
+    overflow: hidden;
+    //padding: 10px 0px;
+    display: grid;
+    //grid-gap:1em;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    grid-template-areas:"GRID_HEADER        GRID_HEADER         GRID_HEADER         GRID_HEADER"
+                        "GRID_BOX1          GRID_BOX1           GRID_IMAGE1         GRID_IMAGE1"
+                        "GRID_IMAGE2        GRID_IMAGE2         GRID_BOX2           GRID_BOX2"
+                        "GRID_GRAFIC        GRID_GRAFIC         GRID_PHOTOGRAFY     GRID_PHOTOGRAFY"
+                        "GRID_TESTIMONIALS  GRID_TESTIMONIALS   GRID_TESTIMONIALS   GRID_TESTIMONIALS"
+                        "GRID_CUADRO1       GRID_CUADRO2        GRID_CUADRO3        GRID_CUADRO4"
+                        "GRID_FOOTER        GRID_FOOTER         GRID_FOOTER         GRID_FOOTER";
+                        .GRID_HEADER{
+                            //padding: 10px 0px;
+                            background: brown;
+                            grid-area: GRID_HEADER;
+                        }
+                        .GRID_BOX1{
+                            //padding: 10px 0px;
+                            background: rgb(115, 179, 19);
+                            grid-area: GRID_BOX1;
+                        }
+                        .GRID_IMAGE1{
+                            //padding: 10px 0px;
+                            background: brown;
+                            grid-area: GRID_IMAGE1;
+                        }
+                        .GRID_IMAGE2{
+                            //padding: 10px 0px;
+                            background: brown;
+                            grid-area: GRID_IMAGE2;
+                        }
+                        .GRID_BOX2{
+                            //padding: 10px 0px;
+                            background: brown;
+                            grid-area: GRID_BOX2;
+                        }
+                        .GRID_GRAFIC{
+                            //padding: 10px 0px;
+                            background: brown;
+                            grid-area: GRID_GRAFIC;
+                        }
+                        .GRID_PHOTOGRAFY{
+                            //padding: 10px 0px;
+                            background: brown;
+                            grid-area: GRID_PHOTOGRAFY;
+                        }
+                        .GRID_TESTIMONIALS{
+                            //padding: 10px 0px;
+                            background: brown;
+                            grid-area: GRID_TESTIMONIALS;
+                        }
+                        .GRID_CUADRO1{
+                            //padding: 10px 0px;
+                            background: rgb(255, 255, 255);
+                            grid-area: GRID_CUADRO1;
+                        }
+                        .GRID_CUADRO2{
+                            //padding: 10px 0px;
+                            background: rgb(255, 255, 255);
+                            grid-area: GRID_CUADRO2;
+                        }
+                        .GRID_CUADRO3{
+                            //padding: 10px 0px;
+                            background: rgb(255, 255, 255);
+                            grid-area: GRID_CUADRO3;
+                        }
+                        .GRID_CUADRO4{
+                            //padding: 10px 0px;
+                            background: rgb(255, 255, 255);
+                            grid-area: GRID_CUADRO4;
+                        }
+                        .GRID_FOOTER{
+                            //padding: 10px 0px;
+                            background: brown;
+                            grid-area: GRID_FOOTER;
+                        }
+}
+
+
+
+
+
+
+
+
+//MOVIL RESPONSIVE
+@media (min-width:320px)  and (max-width:480px){
+    .GRID_BASE{
+        width: 1440px;
+        max-width: 100%;
+        background: rgb(255, 255, 255);
+        margin: auto;
+        //padding: 10px 0px;
+        display: grid;
+        //grid-gap:1em;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+        grid-template-areas:"GRID_HEADER        GRID_HEADER         GRID_HEADER         GRID_HEADER"
+                            "GRID_IMAGE1        GRID_IMAGE1         GRID_IMAGE1         GRID_IMAGE1"
+                            "GRID_BOX1          GRID_BOX1           GRID_BOX1           GRID_BOX1"
+                            "GRID_IMAGE2        GRID_IMAGE2         GRID_IMAGE2         GRID_IMAGE2"
+                            "GRID_BOX2          GRID_BOX2           GRID_BOX2           GRID_BOX2"
+                            "GRID_GRAFIC        GRID_GRAFIC         GRID_GRAFIC         GRID_GRAFIC"
+                            "GRID_PHOTOGRAFY    GRID_PHOTOGRAFY     GRID_PHOTOGRAFY     GRID_PHOTOGRAFY"
+                            "GRID_TESTIMONIALS  GRID_TESTIMONIALS   GRID_TESTIMONIALS   GRID_TESTIMONIALS"
+                            "GRID_CUADRO1       GRID_CUADRO1        GRID_CUADRO2        GRID_CUADRO2"
+                            "GRID_CUADRO3       GRID_CUADRO3        GRID_CUADRO4        GRID_CUADRO4"
+                            "GRID_FOOTER        GRID_FOOTER         GRID_FOOTER         GRID_FOOTER";
+                            
+    }
+    
+}
+

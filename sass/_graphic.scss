@@ -1,0 +1,50 @@
+.contGrafic{
+    width: 100%;
+    background-image: url(../imagenes/desktop/image-graphic-design.jpg);
+    background-size: 100% 100%;
+    height: 450px;
+    text-align: center;
+    padding-top: 300px;
+    .contGrafic_title{
+        font-family: $TIPO_DE_FUENTE2;
+        color: $color_primario_green;
+    }
+    .contGrafic_descripcion{
+        width: 350px;
+        margin: auto;
+        margin-top: 10px;
+        font-family: $TIPO_DE_FUENTE1;
+        color: $color_primario_green;
+    }
+}
+
+
+
+
+
+
+
+
+@media (min-width:320px)  and (max-width:480px){
+    .contGrafic{
+        width: 100%;
+        background-image: url(../imagenes/desktop/image-graphic-design.jpg);
+        background-size: 100% 100%;
+        height: 500px;
+        text-align: center;
+        padding-top: 320px;
+        .contGrafic_title{
+            //font-family: $TIPO_DE_FUENTE2;
+            //color: $color_primario_green;
+            //background: olive;
+        }
+        .contGrafic_descripcion{
+            //background: paleturquoise;
+            width: 350px;
+            margin: auto;
+            margin-top: 30px;
+            //font-family: $TIPO_DE_FUENTE1;
+            //color: $color_primario_green;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+.contTestimonials{
+    width: 100%;
+    padding: 60px 0px;
+    background:$color_neutral_white;
+    .contTestimonials_title{
+        text-align: center;
+        font-family: $TIPO_DE_FUENTE2;
+        text-transform: uppercase;
+        color: $color_neutral_grey;
+        font-size: 20px;
+        margin-top: 80px;
+        letter-spacing: 5px;
+    }
+    .contTestimonials_contSeciones{
+        width: 90%;
+        padding: 10px 0px;
+        margin: auto;
+        //background: hotpink;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        .contTestimonials_contSeciones_base{
+            width: 320px;
+            padding: 5px 30px;
+            //background: grey;
+            .contSeciones_base_figure{
+                width: 80px;
+                height:80px;
+                margin: 10px auto;
+                border-radius: 100%;
+                background: violet;
+                overflow: hidden;
+            }
+            .contSeciones_base_description{
+                margin-top: 50px;
+                font-family: $TIPO_DE_FUENTE1;
+                font-size: 14px;
+                color: $color_neutral_grey;
+            }
+            .contSeciones_base_name{
+                margin-top: 50px;
+            }
+            .contSeciones_base_cargo{
+                color: $color_neutral_grey;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media (min-width:320px)  and (max-width:480px){
+    .contTestimonials{
+        width: 100%;
+        padding: 50px 0px;
+        background:$color_neutral_white;
+        .contTestimonials_title{
+            text-align: center;
+            font-family: $TIPO_DE_FUENTE2;
+            text-transform: uppercase;
+            color: $color_neutral_grey;
+            font-size: 20px;
+            margin-top: 0px;
+            letter-spacing: 5px;
+        }
+        .contTestimonials_contSeciones{
+            width: 90%;
+            padding: 10px 0px;
+            margin: auto;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            .contTestimonials_contSeciones_base{
+                width: 320px;
+                padding: 5px 30px;
+                margin-bottom: 50px;
+                .contSeciones_base_figure{
+                    width: 80px;
+                    height:80px;
+                    margin: 10px auto;
+                    border-radius: 100%;
+                    overflow: hidden;
+                }
+                .contSeciones_base_description{
+                    margin-top: 30px;
+                    //font-family: $TIPO_DE_FUENTE1;
+                    font-size: 14px;
+                    //color: $color_neutral_grey;
+                    //background: orange;
+                }
+                .contSeciones_base_name{
+                    margin-top: 30px;
+                }
+                .contSeciones_base_cargo{
+                    //color: $color_neutral_grey;
+                }
+            }
+        }
+    }
+}

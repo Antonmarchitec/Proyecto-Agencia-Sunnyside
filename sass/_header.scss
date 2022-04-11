@@ -1,0 +1,230 @@
+@import "colors";
+
+
+.contHeader{
+    width: 100%;
+    height: 700px;
+    background-image: url(../imagenes/desktop/image-header.jpg);
+    background-size: 100% 100%;
+    .contHeader_navbar{
+        width: 100%;
+        padding: 10px 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .contHeader_navbar_logo{
+            padding: 5px;
+            //background: fuchsia;
+            margin-left: 20px;
+            .contHeader_navbar_logo_text{
+                text-align: center;
+                color: white;
+                font-size: 28px;
+                letter-spacing: -1px;
+                font-family: $TIPO_DE_FUENTE1;
+                font-weight: 600;
+                //font-family: 'Barlow', sans-serif;   // 600
+                //font-weight: 600;
+                //font-family: 'Fraunces', serif;       //700  900
+                //font-weight: 700;
+            }
+        }
+
+        .contHeader_navbar_ul{
+            width: 500px;
+            padding: 10px 0px;
+            display: flex;
+            //background-color: antiquewhite;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            //background: gold;
+            .contHeader_navbar_ul_li {
+                width: 100px;
+                padding: 8px 18px;
+                //background: white;
+                text-align: center;
+                border-radius: 20px;
+                transition: 0.2s all;
+                .enlace{
+                    text-decoration: none;
+                    color: $color_neutral_white;
+                    font-family: $TIPO_DE_FUENTE1;
+                    font-weight: 600;
+                }
+            }
+            .contHeader_navbar_ul_li:hover{
+                background:white ;
+                cursor: pointer;
+                .enlace{
+                    color: $color_neutral_morado;
+                }
+            }
+        }
+
+        .contHeader_navbar_btnResponsive{
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+            display: none;
+        }
+        
+    }
+
+
+    .contHeader_title{
+        text-align: center;
+        font-size: 40px;
+        color: $color_neutral_white;
+        margin-top: 80px;
+        font-family: $TIPO_DE_FUENTE2;
+        font-weight: 700;
+        letter-spacing: 8px;
+    }
+
+    .contHeader_arrow{
+        width: 100px;
+        padding: 10px 0px;
+        //background: green;
+        margin:100px auto;
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+
+
+@media (min-width:320px)  and (max-width:480px){
+    .contHeader{
+        width: 100%;
+        height: 600px;
+        background-image: url(../imagenes/mobile/image-header.jpg);
+        background-size: 100% 100%;
+        
+        .contHeader_navbar{
+            width: 100%;
+            padding: 10px 0px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+    
+            .contHeader_navbar_logo{
+                padding: 5px;
+                //background: fuchsia;
+                margin-left: 20px;
+                .contHeader_navbar_logo_text{
+                    text-align: center;
+                    color: white;
+                    font-size: 28px;
+                    letter-spacing: -1px;
+                    font-family: $TIPO_DE_FUENTE1;
+                    font-weight: 600;
+                    //font-family: 'Barlow', sans-serif;   // 600
+                    //font-weight: 600;
+                    //font-family: 'Fraunces', serif;       //700  900
+                    //font-weight: 700;
+                }
+            }
+    
+            .contHeader_navbar_ul{
+                width: 87%;
+                height: 350px;
+                padding: 30px 0px;
+                display: flex;
+                position: absolute;
+                top: -380px;
+                //top: 80px;
+                left: 20px;
+                background-color: rgba(255, 255, 255, 0.963);
+                flex-direction:column;
+                justify-content: flex-start;
+                align-items: center;
+                list-style: none;
+                transition: 0.4s ease-in-out all;
+                //transition-delay: 1s;
+                opacity: 0;
+                .contHeader_navbar_ul_li {
+                    width: 150px;
+                    padding: 12px 18px;
+                    margin-bottom: 30px;
+                    text-align: center;
+                    border-radius: 30px;
+                    transition: 0.2s all;
+                    .enlace{
+                        text-decoration: none;
+                        color: $color_neutral_morado;
+                        font-family: $TIPO_DE_FUENTE2;
+                        font-weight: 600;
+                    }
+                }
+                .contHeader_navbar_ul_li:hover{
+                    background: rgb(231, 172, 44);
+                    cursor: pointer;
+                    .enlace{
+                        color: $color_neutral_bluemarino;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            .contHeader_navbar_ul::before{
+                content: "";
+                display: block;
+                //background: black;
+                position: absolute;
+                top: -20px;
+                right: 0;
+                border-top: 20px solid transparent;
+                border-bottom: 20px solid transparent;
+                border-left: 20px solid transparent;
+                border-right: 20px solid rgb(255, 255, 255);
+            }
+            .contHeader_navbar_ul_JS{
+                top: 80px;
+                opacity: 1;
+            }
+    
+            .contHeader_navbar_btnResponsive{
+                width: 50px;
+                height: 50px;
+                margin-right: 20px;
+                display: block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+            
+        }
+    
+    
+        .contHeader_title{
+            text-align: center;
+            font-size: 40px;
+            color: $color_neutral_white;
+            margin-top: 60px;
+            font-family: $TIPO_DE_FUENTE2;
+            font-weight: 700;
+            letter-spacing: 8px;
+        }
+    
+        .contHeader_arrow{
+            width: 100px;
+            padding: 10px 0px;
+            //background: green;
+            margin:90px auto;
+            text-align: center;
+        }
+    
+    }
+}
